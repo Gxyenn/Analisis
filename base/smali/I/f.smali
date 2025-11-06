@@ -1,0 +1,43 @@
+.class public final LI/f;
+.super Ljava/lang/Object;
+.source "r8-map-id-a06d6f0d777eaae8766210db42914f9e0da776ed5480e46a4ce7b9dc45f1e95a"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, LI/g;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    invoke-direct {v0, p1}, LI/g;-><init>(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public final newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [LI/g;
+
+    .line 2
+    .line 3
+    return-object p1
+.end method

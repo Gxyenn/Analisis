@@ -1,0 +1,23 @@
+version: 2.9.3
+apkFileName: AnimePlay_1.1.8.apks
+isFrameworkApk: false
+usesFramework:
+  ids:
+  tag: null
+sdkInfo:
+packageInfo:
+  forcedPackageId: null
+  renameManifestPackage: null
+versionInfo:
+  versionCode: null
+  versionName: null
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  base.apk: 8
+  split_config.armeabi_v7a.apk: 8
+  split_config.en.apk: 8
+  split_config.in.apk: 8
+  split_config.ms.apk: 8
+  split_config.xhdpi.apk: 8

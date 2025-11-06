@@ -1,0 +1,14 @@
+.class public interface abstract LQ2/A;
+.super Ljava/lang/Object;
+.source "r8-map-id-a06d6f0d777eaae8766210db42914f9e0da776ed5480e46a4ce7b9dc45f1e95a"
+
+
+# virtual methods
+.method public abstract c()Z
+.end method
+
+.method public abstract j(J)LQ2/z;
+.end method
+
+.method public abstract l()J
+.end method

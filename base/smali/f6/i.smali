@@ -1,0 +1,166 @@
+.class public final Lf6/i;
+.super LK5/h;
+.source "r8-map-id-a06d6f0d777eaae8766210db42914f9e0da776ed5480e46a4ce7b9dc45f1e95a"
+
+
+# instance fields
+.field public final synthetic p:Lcom/google/android/gms/location/LocationRequest;
+
+.field public final synthetic q:Li6/a;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/common/api/GoogleApiClient;Lcom/google/android/gms/location/LocationRequest;Li6/a;)V
+    .locals 0
+
+    .line 1
+    iput-object p2, p0, Lf6/i;->p:Lcom/google/android/gms/location/LocationRequest;
+
+    .line 2
+    .line 3
+    iput-object p3, p0, Lf6/i;->q:Li6/a;
+
+    .line 4
+    .line 5
+    const/4 p2, 0x1
+
+    .line 6
+    invoke-direct {p0, p1, p2}, LK5/h;-><init>(Lcom/google/android/gms/common/api/GoogleApiClient;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final Q(LN5/c;)V
+    .locals 6
+
+    .line 1
+    check-cast p1, Lf6/f;
+
+    .line 2
+    .line 3
+    new-instance v0, Lf6/k;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0}, Lf6/k;-><init>(LK5/h;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lf6/i;->p:Lcom/google/android/gms/location/LocationRequest;
+
+    .line 9
+    .line 10
+    iget-object v2, p0, Lf6/i;->q:Li6/a;
+
+    .line 11
+    .line 12
+    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v3
+
+    .line 16
+    if-eqz v3, :cond_0
+
+    .line 17
+    .line 18
+    const/4 v3, 0x1
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    const/4 v3, 0x0
+
+    .line 21
+    :goto_0
+    const-string v4, "Can\'t create handler inside thread that has not called Looper.prepare()"
+
+    .line 22
+    .line 23
+    invoke-static {v4, v3}, LO5/C;->j(Ljava/lang/String;Z)V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v3
+
+    .line 30
+    const-class v4, Li6/a;
+
+    .line 31
+    .line 32
+    invoke-virtual {v4}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v4
+
+    .line 36
+    const-string v5, "Looper must not be null"
+
+    .line 37
+    .line 38
+    invoke-static {v3, v5}, LO5/C;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 39
+    .line 40
+    .line 41
+    new-instance v5, Lcom/google/android/gms/common/api/internal/j;
+
+    .line 42
+    .line 43
+    invoke-direct {v5, v3, v2, v4}, Lcom/google/android/gms/common/api/internal/j;-><init>(Landroid/os/Looper;Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    iget-object v2, p1, Lf6/f;->G:Ll4/n;
+
+    .line 47
+    .line 48
+    monitor-enter v2
+
+    .line 49
+    :try_start_0
+    iget-object p1, p1, Lf6/f;->G:Ll4/n;
+
+    .line 50
+    .line 51
+    invoke-virtual {p1, v1, v5, v0}, Ll4/n;->p(Lcom/google/android/gms/location/LocationRequest;Lcom/google/android/gms/common/api/internal/j;Lf6/k;)V
+
+    .line 52
+    .line 53
+    .line 54
+    monitor-exit v2
+
+    .line 55
+    return-void
+
+    .line 56
+    :catchall_0
+    move-exception p1
+
+    .line 57
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 58
+    throw p1
+.end method

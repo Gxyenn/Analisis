@@ -1,0 +1,23 @@
+.class interface abstract Lcom/google/android/gms/tasks/zzab;
+.super Ljava/lang/Object;
+.source "r8-map-id-a06d6f0d777eaae8766210db42914f9e0da776ed5480e46a4ce7b9dc45f1e95a"
+
+# interfaces
+.implements Lcom/google/android/gms/tasks/OnSuccessListener;
+.implements Lcom/google/android/gms/tasks/OnFailureListener;
+.implements Lcom/google/android/gms/tasks/OnCanceledListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lcom/google/android/gms/tasks/OnSuccessListener<",
+        "TT;>;",
+        "Lcom/google/android/gms/tasks/OnFailureListener;",
+        "Lcom/google/android/gms/tasks/OnCanceledListener;"
+    }
+.end annotation
